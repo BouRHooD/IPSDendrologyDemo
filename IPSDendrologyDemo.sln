@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPSDendrologyDemo", "IPSDendrologyDemo\IPSDendrologyDemo.csproj", "{62DD4538-8187-4050-AA53-3A01725E348F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documents", "_Documents", "{F63FC454-2D6D-46C5-BC46-69CCA5AF92FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "install_solution", "install_solution", "{36276490-A428-4703-AB55-356DAD8E56FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev_dll", "dev_dll", "{17D915F4-56D4-45F3-AC2F-EAD5D7C5BD5F}"
+	ProjectSection(SolutionItems) = preProject
+		_Documents\install_solution\dev_dll\accoremgd.dll = _Documents\install_solution\dev_dll\accoremgd.dll
+		_Documents\install_solution\dev_dll\AcCui.dll = _Documents\install_solution\dev_dll\AcCui.dll
+		_Documents\install_solution\dev_dll\acdbmgd.dll = _Documents\install_solution\dev_dll\acdbmgd.dll
+		_Documents\install_solution\dev_dll\acdbmgdbrep.dll = _Documents\install_solution\dev_dll\acdbmgdbrep.dll
+		_Documents\install_solution\dev_dll\AcDx.dll = _Documents\install_solution\dev_dll\AcDx.dll
+		_Documents\install_solution\dev_dll\AcDxPublishUi.dll = _Documents\install_solution\dev_dll\AcDxPublishUi.dll
+		_Documents\install_solution\dev_dll\acmgd.dll = _Documents\install_solution\dev_dll\acmgd.dll
+		_Documents\install_solution\dev_dll\AcMNUParser.dll = _Documents\install_solution\dev_dll\AcMNUParser.dll
+		_Documents\install_solution\dev_dll\AcMr.dll = _Documents\install_solution\dev_dll\AcMr.dll
+		_Documents\install_solution\dev_dll\AcTcMgd.dll = _Documents\install_solution\dev_dll\AcTcMgd.dll
+		_Documents\install_solution\dev_dll\AcWindows.dll = _Documents\install_solution\dev_dll\AcWindows.dll
+		_Documents\install_solution\dev_dll\AdUIMgd.dll = _Documents\install_solution\dev_dll\AdUIMgd.dll
+		_Documents\install_solution\dev_dll\AdUiPalettes.dll = _Documents\install_solution\dev_dll\AdUiPalettes.dll
+		_Documents\install_solution\dev_dll\AdWindows.dll = _Documents\install_solution\dev_dll\AdWindows.dll
+		_Documents\install_solution\dev_dll\AecBaseMgd.dll = _Documents\install_solution\dev_dll\AecBaseMgd.dll
+		_Documents\install_solution\dev_dll\AeccDbMgd.dll = _Documents\install_solution\dev_dll\AeccDbMgd.dll
+		_Documents\install_solution\dev_dll\AeccPressurePipesMgd.dll = _Documents\install_solution\dev_dll\AeccPressurePipesMgd.dll
+		_Documents\install_solution\dev_dll\AecPropDataMgd.dll = _Documents\install_solution\dev_dll\AecPropDataMgd.dll
+		_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.Common.dll = _Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.Common.dll
+		_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.dll = _Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62DD4538-8187-4050-AA53-3A01725E348F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62DD4538-8187-4050-AA53-3A01725E348F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62DD4538-8187-4050-AA53-3A01725E348F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62DD4538-8187-4050-AA53-3A01725E348F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36276490-A428-4703-AB55-356DAD8E56FF} = {F63FC454-2D6D-46C5-BC46-69CCA5AF92FD}
+		{17D915F4-56D4-45F3-AC2F-EAD5D7C5BD5F} = {36276490-A428-4703-AB55-356DAD8E56FF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {741AD43A-4B98-4269-853B-24930768D868}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62DD4538-8187-4050-AA53-3A01725E348F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPSDendrologyDemo</RootNamespace>
+    <AssemblyName>IPSDendrologyDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="accoremgd">
+      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\accoremgd.dll</HintPath>
+    </Reference>
+    <Reference Include="acdbmgd">
+      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\acdbmgd.dll</HintPath>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\acmgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AecBaseMgd">
+      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\AecBaseMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="AeccDbMgd">
+      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\AeccDbMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop, Version=18.2.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common, Version=18.2.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControl\CustomDataGrid.cs" />
+    <Compile Include="Other\AppData.cs" />
+    <Compile Include="Other\BlockUtils.cs" />
+    <Compile Include="Other\DatabaseExts.cs" />
+    <Compile Include="Other\DatabaseService.cs" />
+    <Compile Include="Other\EditorUtils.cs" />
+    <Compile Include="Other\EntityExts.cs" />
+    <Compile Include="Other\EntityUtils.cs" />
+    <Compile Include="Other\FileUtils.cs" />
+    <Compile Include="Other\LayerUtils.cs" />
+    <Compile Include="Other\NumbersUtils.cs" />
+    <Compile Include="Other\ObjectIdExts.cs" />
+    <Compile Include="Other\PromptUtils.cs" />
+    <Compile Include="Other\ViewModelBase.cs" />
+    <Compile Include="Other\XDataUtils.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\DendrologyService.cs" />
+    <Compile Include="Services\GenerateDendrologyService.cs" />
+    <Compile Include="Services\GenerateMLeaderService.cs" />
+    <Compile Include="UIService\DirectionalLeaderJig.cs" />
+    <Compile Include="ViewModels\MainViewViewModel.cs" />
+    <Compile Include="View\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MathNet.Spatial">
+      <Version>0.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="NPOI">
+      <Version>2.5.6</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Core">
+      <Version>8.1.97</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DWG\блоки дендроплан.dwg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DWG\AboutDWG.txt" />
+    <Resource Include="Images\AddBlock.png" />
+    <Resource Include="Images\AddExistingBlock.png" />
+    <Resource Include="Images\change.png" />
+    <Resource Include="Images\DeleteRow.png" />
+    <Resource Include="Images\FocusAndZoom.png" />
+    <Resource Include="Images\Leader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Styles\Buttons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Scrolls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetPath)" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\Contents\" /y
+
+xcopy "$(ProjectDir)DWG\блоки дендроплан.dwg" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\Contents\" /y</PostBuildEvent>
+  </PropertyGroup>
+</Project>
