@@ -30,31 +30,32 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="accoremgd">
-      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\accoremgd.dll</HintPath>
+      <HintPath>..\_Documents\install_solution\dev_dll\accoremgd.dll</HintPath>
     </Reference>
     <Reference Include="acdbmgd">
-      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\acdbmgd.dll</HintPath>
+      <HintPath>..\_Documents\install_solution\dev_dll\acdbmgd.dll</HintPath>
     </Reference>
     <Reference Include="acmgd">
-      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\acmgd.dll</HintPath>
+      <HintPath>..\_Documents\install_solution\dev_dll\acmgd.dll</HintPath>
     </Reference>
     <Reference Include="AecBaseMgd">
-      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\AecBaseMgd.dll</HintPath>
+      <HintPath>..\_Documents\install_solution\dev_dll\AecBaseMgd.dll</HintPath>
     </Reference>
     <Reference Include="AeccDbMgd">
-      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\AeccDbMgd.dll</HintPath>
+      <HintPath>..\_Documents\install_solution\dev_dll\AeccDbMgd.dll</HintPath>
     </Reference>
-    <Reference Include="Autodesk.AutoCAD.Interop, Version=18.2.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Autodesk.AutoCAD.Interop">
+      <HintPath>..\_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.dll</HintPath>
     </Reference>
-    <Reference Include="Autodesk.AutoCAD.Interop.Common, Version=18.2.0.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common">
+      <HintPath>..\_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\Работа\АО ИНЖПРОЕКТСЕРВИС\AutoCad_Application\ACADConstructionPit_Solution_App\_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -123,9 +124,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="_SettingsBundle\UI\UI_Dendrology_Demo.cuix" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DWG\AboutDWG.txt" />
+    <Content Include="_SettingsBundle\UI\Dendrology_Demo.png" />
+    <Content Include="_SettingsBundle\PackageContents.xml" />
     <Resource Include="Images\AddBlock.png" />
     <Resource Include="Images\AddExistingBlock.png" />
     <Resource Include="Images\change.png" />
@@ -147,10 +151,15 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetPath)" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\Contents\" /y
 
-xcopy "$(ProjectDir)DWG\блоки дендроплан.dwg" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\Contents\" /y</PostBuildEvent>
+xcopy "$(ProjectDir)DWG\блоки дендроплан.dwg" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\Contents\" /y
+
+xcopy "$(ProjectDir)_SettingsBundle\UI\Dendrology_Demo.png" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\UI\" /y
+xcopy "$(ProjectDir)_SettingsBundle\UI\UI_Dendrology_Demo.cuix" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\UI\" /y
+xcopy "$(ProjectDir)_SettingsBundle\PackageContents.xml" "%25AppData%25\Autodesk\ApplicationPlugins\IPSDendrologyDemo.bundle\" /y</PostBuildEvent>
   </PropertyGroup>
 </Project>

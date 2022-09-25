@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0">
+
+  <CompanyDetails Name="Surflay" Email="bourhood@gmail.com" />
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD|Civil3D"/>
+    			
+	<ComponentEntry AppName="UI_Dendrology_Demo"
+                    AppDescription="UI_Dendrology_Demo"
+                    ModuleName="./UI/UI_Dendrology_Demo.cuix" />
+
+    <ComponentEntry AppName="IPSDendrologyDemo"
+                    AppDescription="IPSDendrologyDemo.dll"
+                    ModuleName="./Contents/IPSDendrologyDemo.dll"
+                    LoadOnCommandInvocation ="True" LoadOnRequest="True">
+      <Commands GroupName="IPS">
+        <Command Local="IPSDendrologyDemo" Global="IPSDendrologyDemo" Description="IPSDendrologyDemo" />
+      </Commands>
+    </ComponentEntry>
+	
+  </Components>
+</ApplicationPackage>

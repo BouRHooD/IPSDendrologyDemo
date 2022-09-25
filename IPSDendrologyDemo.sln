@@ -33,6 +33,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev_dll", "dev_dll", "{17D9
 		_Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.dll = _Documents\install_solution\dev_dll\Autodesk.AutoCAD.Interop.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{55383F4A-D5C3-48B9-A0EE-11226D434FBA}"
+	ProjectSection(SolutionItems) = preProject
+		_Documents\images\_1.jpg = _Documents\images\_1.jpg
+		_Documents\images\_2.jpg = _Documents\images\_2.jpg
+		_Documents\images\_3.jpg = _Documents\images\_3.jpg
+		_Documents\images\_4.jpg = _Documents\images\_4.jpg
+		_Documents\images\_5.jpg = _Documents\images\_5.jpg
+		_Documents\images\_6.jpg = _Documents\images\_6.jpg
+		_Documents\images\_7.jpg = _Documents\images\_7.jpg
+		_Documents\images\_8.jpg = _Documents\images\_8.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +62,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{36276490-A428-4703-AB55-356DAD8E56FF} = {F63FC454-2D6D-46C5-BC46-69CCA5AF92FD}
 		{17D915F4-56D4-45F3-AC2F-EAD5D7C5BD5F} = {36276490-A428-4703-AB55-356DAD8E56FF}
+		{55383F4A-D5C3-48B9-A0EE-11226D434FBA} = {F63FC454-2D6D-46C5-BC46-69CCA5AF92FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {741AD43A-4B98-4269-853B-24930768D868}
