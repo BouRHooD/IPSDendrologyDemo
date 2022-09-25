@@ -47,3 +47,30 @@ $PROJECT_ROOT
 Необходимо выбрать в настройках проекта запуск внешней программы -> выбрать путь до acad.exe вашей версии AutoCAD
 ![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_1.jpg)
 
+##  Пример работы с программой
+
+1) Запуск через командную строку AutoCAD
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_0.jpg)
+
+2) Пример приложения в новом созданном документе
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_2.jpg)
+
+3) Пример добавления в документ шаблонного блока
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_3.jpg)
+
+4) Пример добавления скопированного объекта в таблицу приложения из документа  
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_4.jpg)
+
+5) Пример выставления выносок на объекты 
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_5.jpg)
+
+6) Пример фокусировки внимания и зумирование на объекте 
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_6.jpg)
+
+7) Пример изменения типа на куст с мгновенным изменением данных в документе
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_7.jpg)
+
+8) Пример изменения типа на пень с мгновенным изменением данных в документе
+![](https://github.com/BouRHooD/IPSDendrologyDemo/blob/master/_Documents/images/_8.jpg)
+
+
